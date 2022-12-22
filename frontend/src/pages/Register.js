@@ -31,7 +31,7 @@ function Register(){
     
        
         axios({
-          url: `${apiUrl}/users`,
+          url: `${apiUrl}/register`,
           method: 'POST',
           data: user
         }).then(res => setCreatedUser(res.data)).catch(console.error)
